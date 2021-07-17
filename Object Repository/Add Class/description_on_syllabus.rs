@@ -7,11 +7,15 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#lesson_lesson_syllabuses_attributes_1624444098867_description</value>
+         <value>#lesson_lesson_syllabuses_attributes_1625119328382_description</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'lesson_lesson_syllabuses_attributes_1624444098867_description']</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//textarea[@name='lesson[lesson_syllabuses_attributes][1624956855938][description]']</value>
+         <value>/html[1]/body[1]/div[1]/div[1]/main[1]/section[1]/form[1]/div[1]/div[7]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/textarea[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -24,7 +28,7 @@
       <value>textarea</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
