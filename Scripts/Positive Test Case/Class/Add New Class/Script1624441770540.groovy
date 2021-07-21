@@ -25,11 +25,11 @@ WebUI.click(findTestObject('Add Class/a_Add Class'))
 
 WebUI.click(findTestObject('Add Class/select_theme'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('theme_selection_7th'))
+WebUI.click(findTestObject('Add Class/theme_selection_7th'))
 
-WebUI.uploadFile(findTestObject('Add Class/upload_picture 240x240'), 'D:\\Sample pictures for testing\\original_hawaii 240x240.jpg')
+WebUI.uploadFile(findTestObject('Add Class/upload picture 240x240'), 'C:\\Users\\faris\\Pictures\\VyBE Testing Purpose\\beach view 240x240.jpg')
 
-WebUI.uploadFile(findTestObject('Add Class/upload picture 384x240'), 'D:\\Sample pictures for testing\\original_hawaii 384x240.jpg')
+WebUI.uploadFile(findTestObject('Add Class/upload_picture 384x240'), 'C:\\Users\\faris\\Pictures\\VyBE Testing Purpose\\beach view 384x240.jpg')
 
 WebUI.setText(findTestObject('Add Class/class_title'), 'Environment on Beach')
 
@@ -51,19 +51,27 @@ WebUI.click(findTestObject('Add Class/select_language'))
 
 WebUI.click(findTestObject('Add Class/english_language'))
 
+WebUI.check(findTestObject('Add Class/class_level_A1'))
+
+WebUI.check(findTestObject('Add Class/class_level_A2'))
+
+WebUI.check(findTestObject('Add Class/class_level_B1'))
+
+WebUI.check(findTestObject('Add Class/class_level_B2'))
+
 WebUI.setText(findTestObject('Add Class/lesson _summary'), 'Beach has elements and objects that is very specific. It  is a good way to improve your english by differentiate things and classify them by place and  functionality')
 
 WebUI.click(findTestObject('Add Class/class_materials(plus)'))
 
-WebUI.uploadFile(findTestObject('Add Class/upload_file_on_class_materials'), 'D:\\VyBE\\Beach Read by Emily Henry.pdf')
+WebUI.uploadFile(findTestObject('Add Class/upload_file_on_class_materials'), 'D:\\Itsavirus\\VyBE\\Beach Read By Emily Henry-pdfread.net.pdf')
 
 WebUI.click(findTestObject('Add Class/class_schedule(plus)'))
 
-WebUI.clearText(findTestObject('Add Class/choose_date_on_class_schedule'))
+WebUI.sendKeys(findTestObject('Add Class/choose_date_on_class_schedule'), Keys.chord(Keys.CONTROL, 'a', Keys.BACK_SPACE))
 
 WebUI.setText(findTestObject('Add Class/choose_date_on_class_schedule'), '2021-07-15')
 
-WebUI.clearText(findTestObject('Add Class/choose_start_time_on_class_schedule'))
+WebUI.sendKeys(findTestObject('Add Class/choose_start_time_on_class_schedule'), Keys.chord(Keys.CONTROL, 'a', Keys.BACK_SPACE))
 
 WebUI.setText(findTestObject('Add Class/choose_start_time_on_class_schedule'), '14:00')
 
@@ -71,7 +79,13 @@ WebUI.click(findTestObject('Add Class/class_syllabus(plus)'))
 
 WebUI.setText(findTestObject('Add Class/title_on_syllabus'), 'Natural Elements')
 
+WebUI.scrollToElement(findTestObject('Add Class/add_button(class menu)'), 0)
+
 WebUI.setText(findTestObject('Add Class/description_on_syllabus'), 'Some of the essential elements that exist in a beach is sand, saltwater, rock, shore, trees. we can even mention waves, breeze and birds for the details.')
 
 WebUI.click(findTestObject('Page_Add_Student/Add_button'))
+
+WebUI.callTestCase(findTestCase('Positive Test Case/Class/Delete Class'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.closeBrowser()
 
