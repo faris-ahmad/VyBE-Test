@@ -19,9 +19,9 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.navigateToUrl('https://staging.vybe.iavtest.com/')
 
-WebUI.click(findTestObject('Teacher/teacher_menu'))
+WebUI.click(findTestObject('Page_Teacher/teacher_menu'))
 
-WebUI.click(findTestObject('Teacher/delete_teacher_nora'))
+WebUI.click(findTestObject('Page_Teacher/delete_teacher_nora'))
 
-WebUI.click(findTestObject('Teacher/sure_button_delete_teacher'))
+WebUI.click(findTestObject('Page_Teacher/sure_button_delete_teacher'))
 

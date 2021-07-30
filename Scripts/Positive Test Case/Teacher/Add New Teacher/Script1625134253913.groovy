@@ -17,27 +17,27 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Positive Test Case/Student/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Positive Test Case/Login/Login_Admin'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Teacher/teacher_menu'))
+WebUI.click(findTestObject('Page_Teacher/teacher_menu'))
 
-WebUI.click(findTestObject('Teacher/add_new_teacher_button'))
+WebUI.click(findTestObject('Page_Teacher/add_new_teacher_button'))
 
-WebUI.uploadFile(findTestObject('Teacher/upload_teacher_picture'), 'C:\\Users\\faris\\Pictures\\VyBE Testing Purpose\\Teacher\\Teacher 1 square (240x240).jpg')
+WebUI.uploadFile(findTestObject('Page_Teacher/upload_teacher_picture'), 'C:\\Users\\faris\\Pictures\\VyBE Testing Purpose\\Teacher\\Teacher 1 square (240x240).jpg')
 
-WebUI.setText(findTestObject('Teacher/first_name_teacher'), 'Nora')
+WebUI.setText(findTestObject('Page_Teacher/first_name_teacher'), 'Nora')
 
-WebUI.setText(findTestObject('Teacher/last_name_teacher'), 'Izzakova')
+WebUI.setText(findTestObject('Page_Teacher/last_name_teacher'), 'Izzakova')
 
-WebUI.setText(findTestObject('Teacher/email_teacher'), 'izznora@gmail.com')
+WebUI.setText(findTestObject('Page_Teacher/email_teacher'), 'izznora@gmail.com')
 
-WebUI.setText(findTestObject('Teacher/line_id_teacher'), 'izznora128')
+WebUI.setText(findTestObject('Page_Teacher/line_id_teacher'), 'izznora128')
 
-WebUI.setText(findTestObject('Teacher/employee_id_teacher'), '391AUV')
+WebUI.setText(findTestObject('Page_Teacher/employee_id_teacher'), '391AUV')
 
-WebUI.setText(findTestObject('Teacher/biography_teacher'), 'An experienced teacher that has been developing methods to educate students about history')
+WebUI.setText(findTestObject('Page_Teacher/biography_teacher'), 'An experienced teacher that has been developing methods to educate students about history')
 
-WebUI.click(findTestObject('Teacher/add_button_submit_teacher'))
+WebUI.click(findTestObject('Page_Teacher/add_button_submit_teacher'))
 
 WebUI.callTestCase(findTestCase('Positive Test Case/Teacher/Delete Teacher'), [:], FailureHandling.STOP_ON_FAILURE)
 
