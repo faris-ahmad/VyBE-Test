@@ -39,7 +39,7 @@ WebUI.setText(findTestObject('Page_Teacher/biography_teacher'), 'An experienced 
 
 WebUI.click(findTestObject('Page_Teacher/add_button_submit_teacher'))
 
-WebUI.callTestCase(findTestCase('Positive Test Case/Teacher/Delete Teacher'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Positive Test Case/Teacher/Delete Teacher (dependent)'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
 

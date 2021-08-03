@@ -85,7 +85,7 @@ WebUI.setText(findTestObject('Add Class/description_on_syllabus'), 'Some of the 
 
 WebUI.click(findTestObject('Page_Add_Student/Add_button'))
 
-WebUI.callTestCase(findTestCase('Positive Test Case/Class/Delete Class'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Positive Test Case/Class/Delete Class (dependent)'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
 

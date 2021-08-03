@@ -17,21 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Positive Test Case/Login/Login_Admin'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.navigateToUrl('https://staging.vybe.iavtest.com/')
 
-WebUI.click(findTestObject('Page_Menu_Theme/Theme_menu'))
+WebUI.click(findTestObject('Page_Main_Menu/Education_management'))
 
-WebUI.click(findTestObject('Page_Menu_Theme/Page_Add_Theme/add_theme_button'))
+WebUI.click(findTestObject('Page_Lesson_Preparations/Lesson_Preparations_menu'))
 
-WebUI.uploadFile(findTestObject('Page_Menu_Theme/Page_Add_Theme/upload_theme_picture'), 'D:\\Sample pictures for testing\\tourism_theme(305x133).png')
+WebUI.click(findTestObject('Page_Lesson_Preparations/Delete_Lesson_Preparation'))
 
-WebUI.setText(findTestObject('Page_Menu_Theme/Page_Add_Theme/theme_title'), 'World Tourism')
-
-WebUI.setText(findTestObject('Page_Menu_Theme/Page_Add_Theme/theme_publish_date'), '2021-08-05')
-
-WebUI.click(findTestObject('Page_Menu_Theme/Page_Add_Theme/Add_button'))
-
-WebUI.callTestCase(findTestCase('Positive Test Case/Theme/Delete Theme (dependent)'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Page_Lesson_Preparations/Lesson_Preparation_sure_button'))
 

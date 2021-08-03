@@ -6,12 +6,12 @@
    <elementGuidId>fce2300a-23f7-4fc9-a195-8fee77af30a0</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>a.vybe-action-btn.destroy-btn</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>(.//*[normalize-space(text()) and normalize-space(.)='Nora Izzakova'])[1]/following::a[4]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>a.vybe-action-btn.destroy-btn</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
