@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='option' and @data-value='2']</value>
+         <value>//div[contains(@data-value,'2')]</value>
       </entry>
       <entry>
          <key>BASIC</key>

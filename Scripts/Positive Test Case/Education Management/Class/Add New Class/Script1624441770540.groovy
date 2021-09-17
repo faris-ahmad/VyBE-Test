@@ -27,7 +27,7 @@ WebUI.click(findTestObject('Page_Add_Class/a_Add Class'))
 
 WebUI.click(findTestObject('Page_Add_Class/select_theme'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Add_Class/theme_selection_7th'))
+WebUI.click(findTestObject('Page_Add_Class/theme_selection_1st'))
 
 WebUI.uploadFile(findTestObject('Page_Add_Class/upload picture 240x240'), '/Users/farisharunahmad/Documents/Vybe/beach-environment(240x240).png')
 

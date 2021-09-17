@@ -21,7 +21,7 @@ WebUI.callTestCase(findTestCase('Positive Test Case/Login/Login Admin'), [:], Fa
 
 WebUI.click(findTestObject('Page_Students - Vybe/a_Edit'))
 
-WebUI.uploadFile(findTestObject('Page_Edit_Student - Vybe/Upload_Picture'), 'D:\\Sample pictures for testing\\man with glasses.jpg', 
+WebUI.uploadFile(findTestObject('Page_Edit_Student - Vybe/Upload_Picture'), '/Users/farisharunahmad/Documents/Vybe/teacher(240x240).png', 
     FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.setText(findTestObject('Page_Edit_Student - Vybe/input_First name_userfirst_name'), 'Thomas')
@@ -38,15 +38,21 @@ WebUI.click(findTestObject('Page_Edit_Student - Vybe/Indonesia Country Code'))
 
 WebUI.setText(findTestObject('Page_Edit_Student - Vybe/input_Phone number_userphone_number'), '878654321')
 
+WebUI.sendKeys(findTestObject('Page_Edit_Student - Vybe/input_Birth date_userbirth_date'), Keys.chord(Keys.CONTROL, 'a'))
+
+WebUI.sendKeys(findTestObject('Page_Edit_Student - Vybe/input_Birth date_userbirth_date'), Keys.chord(Keys.DELETE))
+
 WebUI.setText(findTestObject('Page_Edit_Student - Vybe/input_Birth date_userbirth_date'), '1988-04-21')
+
+WebUI.click(findTestObject('Page_Edit_Student - Vybe/penaltied cancel'))
+
+WebUI.scrollToElement(findTestObject('Page_Edit_Student - Vybe/penaltied cancel'), 0)
+
+WebUI.click(findTestObject('Page_Edit_Student - Vybe/penaltied cancel number 2'))
 
 WebUI.click(findTestObject('Page_Edit_Student - Vybe/english level selector'))
 
 WebUI.selectOptionByLabel(findTestObject('Page_Edit_Student - Vybe/english level selector'), 'B2', true)
-
-WebUI.click(findTestObject('Page_Edit_Student - Vybe/penaltied cancel'))
-
-WebUI.click(findTestObject('Page_Edit_Student - Vybe/penaltied cancel number 2'))
 
 WebUI.click(findTestObject('Page_Edit_Student - Vybe/chinese level selector'))
 
@@ -61,6 +67,8 @@ WebUI.click(findTestObject('Page_Edit_Student - Vybe/subscription-trial'))
 WebUI.click(findTestObject('Page_Edit_Student - Vybe/student-save button'))
 
 WebUI.callTestCase(findTestCase('Positive Test Case/Student Management/Student/Edit Student - Reverse'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(10)
 
 WebUI.closeBrowser()
 

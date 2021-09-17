@@ -23,7 +23,7 @@ WebUI.click(findTestObject('Page_Teacher/teacher_menu'))
 
 WebUI.click(findTestObject('Page_Teacher/add_new_teacher_button'))
 
-WebUI.uploadFile(findTestObject('Page_Teacher/upload_teacher_picture'), 'C:\\Users\\faris\\Pictures\\VyBE Testing Purpose\\Teacher\\Teacher 1 square (240x240).jpg')
+WebUI.uploadFile(findTestObject('Page_Teacher/upload_teacher_picture'), '/Users/farisharunahmad/Documents/Vybe/teacher(240x240).png')
 
 WebUI.setText(findTestObject('Page_Teacher/first_name_teacher'), 'Nora')
 

@@ -17,7 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.navigateToUrl('https://staging.vybe.iavtest.com/')
+
 WebUI.click(findTestObject('Page_Students - Vybe/Edit - reverse back'))
+
+WebUI.click(findTestObject('Page_Students - Vybe/a_Edit'))
 
 WebUI.setText(findTestObject('Page_Edit_Student - Vybe/input_First name_userfirst_name'), 'Lip')
 
